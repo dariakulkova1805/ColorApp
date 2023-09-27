@@ -13,6 +13,7 @@
 		C8B9BA0D2AC4221200764042 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B9BA0B2AC4221200764042 /* Main.storyboard */; };
 		C8B9BA0F2AC4221300764042 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B9BA0E2AC4221300764042 /* Assets.xcassets */; };
 		C8B9BA122AC4221300764042 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B9BA102AC4221300764042 /* LaunchScreen.storyboard */; };
+		C8B9BA1A2AC4223000764042 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B9BA192AC4223000764042 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C8B9BA0E2AC4221300764042 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B9BA112AC4221300764042 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8B9BA132AC4221300764042 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B9BA192AC4223000764042 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,56 @@
 		C8B9BA042AC4221200764042 /* ColorApp */ = {
 			isa = PBXGroup;
 			children = (
-				C8B9BA052AC4221200764042 /* AppDelegate.swift */,
-				C8B9BA072AC4221200764042 /* SceneDelegate.swift */,
-				C8B9BA092AC4221200764042 /* ViewController.swift */,
-				C8B9BA0B2AC4221200764042 /* Main.storyboard */,
-				C8B9BA0E2AC4221300764042 /* Assets.xcassets */,
-				C8B9BA102AC4221300764042 /* LaunchScreen.storyboard */,
-				C8B9BA132AC4221300764042 /* Info.plist */,
+				C8B9BA1B2AC454D000764042 /* ViewControllers */,
+				C8B9BA1D2AC4552700764042 /* Models */,
+				C8B9BA1E2AC4555500764042 /* Storyboards */,
+				C8B9BA1F2AC455A500764042 /* App */,
+				C8B9BA202AC455B800764042 /* Resources */,
 			);
 			path = ColorApp;
+			sourceTree = "<group>";
+		};
+		C8B9BA1B2AC454D000764042 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9BA092AC4221200764042 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C8B9BA1D2AC4552700764042 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9BA192AC4223000764042 /* Color.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C8B9BA1E2AC4555500764042 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9BA0B2AC4221200764042 /* Main.storyboard */,
+				C8B9BA102AC4221300764042 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C8B9BA1F2AC455A500764042 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9BA052AC4221200764042 /* AppDelegate.swift */,
+				C8B9BA072AC4221200764042 /* SceneDelegate.swift */,
+				C8B9BA132AC4221300764042 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C8B9BA202AC455B800764042 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C8B9BA0E2AC4221300764042 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +182,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B9BA0A2AC4221200764042 /* ViewController.swift in Sources */,
+				C8B9BA1A2AC4223000764042 /* Color.swift in Sources */,
 				C8B9BA062AC4221200764042 /* AppDelegate.swift in Sources */,
 				C8B9BA082AC4221200764042 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +346,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dasha-Kulkova.ColorApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +377,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Dasha-Kulkova.ColorApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
